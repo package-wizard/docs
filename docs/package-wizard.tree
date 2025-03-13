@@ -13,6 +13,5 @@
         <toc-element topic="schema.topic" />
         <toc-element topic="example.topic" />
     </toc-element>
-    <toc-element topic="receipts.topic" />
     <toc-element topic="license.topic" toc-title="License" />
 </instance-profile>

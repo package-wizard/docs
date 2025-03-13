@@ -16,8 +16,8 @@
         </description>
 
         <spotlight>
-            <a href="installation.topic" summary="Project installation information" />
-            <a href="usage.topic" summary="Project usage information" />
+            <a href="installation.topic" type="start" />
+            <a href="usage.topic" type="settings" />
         </spotlight>
     </section-starting-page>
 </topic>

@@ -47,6 +47,11 @@ jobs:
             -   name: Configure git
                 run: git config --global --add safe.directory /github/workspace
 
+            -   name: Download schema
+                run: |
+                    cd docs/resources
+                    curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/heads/main/resources/schemas/schema-v2.json
+
             -   name: Build documentation
                 uses: JetBrains/writerside-github-action@v4
                 with:

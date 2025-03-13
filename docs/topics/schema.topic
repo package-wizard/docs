@@ -8,6 +8,6 @@
 
     <code-block
         lang="json"
-        src="../resources/schema-v2.json"
+        src="https://raw.githubusercontent.com/package-wizard/installer/refs/heads/main/resources/schemas/schema-v2.json"
     />
 </topic>

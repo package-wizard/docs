@@ -24,10 +24,12 @@
     </code-block>
 
     <p>
-        Now the <code>%package-command%</code> command is available in the console.
+        Now the <code>%package-command%</code> console command is available.
     </p>
 
     <p>
-        To obtain detailed information on the use of a console command, go to the <a href="usage.topic" /> page.
+        To obtain detailed information on the use of a console command, go to the
+        <format style="bold"><a href="usage.topic" /></format>
+        page.
     </p>
 </topic>

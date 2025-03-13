@@ -149,6 +149,7 @@ jobs:
         needs:
             - test
             - robots
+            - schema
 
         name: Deploy to pages
         runs-on: ubuntu-latest

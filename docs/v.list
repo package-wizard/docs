@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE vars SYSTEM "https://resources.jetbrains.com/writerside/1.0/vars.dtd">
 <vars>
-    <var name="product" value="Writerside Documentation" />
+    <var name="install-package-wizard" value="composer global require package-wizard/installer:*" />
+    <var name="product-name" value="Package Wizard" />
+    <var name="product-description" value="Package Wizard is a library for creating a new packages using CLI tool" />
+    <var name="package-command" value="package" />
     <var name="year" value="2025" />
-    <var name="install-project" value="composer create-project package-wizard/writerside-template" />
 </vars>

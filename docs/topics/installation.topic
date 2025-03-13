@@ -8,15 +8,26 @@
 
     <show-structure depth="3" />
 
-    <link-summary>Information on quick installation of project</link-summary>
-    <card-summary>Information on quick installation of project</card-summary>
-    <web-summary>Information on quick installation of project</web-summary>
+    <link-summary>%product-name% installation information</link-summary>
+    <card-summary>%product-name% installation information</card-summary>
+    <web-summary>%product-name% installation information</web-summary>
 
     <p>
-        Install the package using the console command:
+        To get the latest version of
+        <format style="bold">%product-name%</format>
+        , simply require the project using
+        <a href="https://getcomposer.org">Composer</a>:
     </p>
 
     <code-block lang="bash">
-        %install-project%
+        %install-package-wizard%
     </code-block>
+
+    <p>
+        Now the <code>%package-command%</code> command is available in the console.
+    </p>
+
+    <p>
+        To obtain detailed information on the use of a console command, go to the <a href="usage.topic" /> page.
+    </p>
 </topic>

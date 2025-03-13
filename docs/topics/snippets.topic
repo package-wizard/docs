@@ -4,7 +4,7 @@
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" is-library="true" id="snippets" title="Snippets">
 
-    <snippet id="simple-snippet">
-        Hello from <code>snippets.topic</code> !
-    </snippet>
+<!--    <snippet id="simple-snippet">-->
+<!--        Hello from <code>snippets.topic</code> !-->
+<!--    </snippet>-->
 </topic>

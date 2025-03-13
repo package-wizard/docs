@@ -8,30 +8,24 @@
 
     <show-structure depth="3" />
 
-    <link-summary>Detailed information on the use of the project</link-summary>
-    <card-summary>Detailed information on the use of the project</card-summary>
-    <web-summary>Detailed information on the use of the project</web-summary>
+    <link-summary>More information on using %product-name%</link-summary>
+    <card-summary>More information on using %product-name%</card-summary>
+    <web-summary>More information on using %product-name%</web-summary>
 
-    <primary-label ref="stable" />
-    <secondary-label ref="package-name" />
-
-    <chapter title="First Section" id="first-section">
+    <chapter title="Basic Usage" id="basic_usage">
         <p>
-            Some usage #1
+            To load and customize a project from the default list, simply invoke the console command:
         </p>
 
-        <code-block lang="json" src="some-snippet.json" />
-    </chapter>
+        <code-block lang="bash">
+            %package-command%
+            
+            // or            
+            php %package-command%
+        </code-block>
 
-    <chapter title="Second Section" id="second-section">
         <p>
-            <include from="snippets.topic" element-id="simple-snippet" />
-        </p>
-
-        <p>
-            Some
-            <tooltip term="description">usage</tooltip>
-            #2
+            The program will then ask you a few questions and prepare the selected project for you.
         </p>
     </chapter>
 </topic>

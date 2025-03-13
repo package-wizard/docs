@@ -9,10 +9,10 @@
     <title>Getting Started</title>
 
     <section-starting-page>
-        <title>%product%</title>
+        <title>%product-name%</title>
 
         <description>
-            Description of your project
+            %product-description%
         </description>
 
         <spotlight>

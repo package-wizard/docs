@@ -17,7 +17,7 @@
         <web-root>https://package-wizard.com</web-root>
         <enable-contribution>true</enable-contribution>
         <contribute-url>
-            https://github.com/package-wizard/writerside-template/edit/main/docs/
+            https://github.com/package-wizard/docs/edit/main/docs/
         </contribute-url>
 
         <analytics-head-script-file>
@@ -27,7 +27,7 @@
 
     <sitemap priority="0.5" change-frequency="weekly" />
 
-    <build-profile instance="writerside-documentation">
+    <build-profile instance="package-wizard">
         <variables>
             <noindex-content>false</noindex-content>
             <product-web-url>https://package-wizard.com/</product-web-url>
@@ -35,10 +35,10 @@
     </build-profile>
 
     <footer>
-        <social type="github" href="https://github.com/package-wizard/writerside-template">
+        <social type="github" href="https://github.com/package-wizard">
             GitHub
         </social>
-        <link href="https://github.com/package-wizard/writerside-template">
+        <link href="https://github.com/package-wizard">
             GitHub
         </link>
         <link href="https://boosty.to/dragon-code">

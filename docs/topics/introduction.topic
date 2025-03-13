@@ -4,9 +4,9 @@
 <topic
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-    title="Introduction" id="introduction">
+    title="%product-name%" id="introduction">
 
-    <title>Getting Started</title>
+    <title>Prologue</title>
 
     <section-starting-page>
         <title>%product-name%</title>

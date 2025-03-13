@@ -9,6 +9,8 @@
     <toc-element topic="introduction.topic" />
     <toc-element topic="installation.topic" />
     <toc-element topic="usage.topic" />
-    <toc-element topic="schema.topic" />
+    <toc-element topic="development.topic" >
+        <toc-element topic="schema.topic" />
+    </toc-element>
     <toc-element topic="license.topic" toc-title="License" />
 </instance-profile>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Is it a feature or a bug ?" id="feature-or-bug">
+
+    <title>Feature or Bug</title>
+
+    <tip>
+        Sometimes it's a bit tricky to define if given change proposal or change request is adding new feature or fixing existing issue. This document is providing more clarity about categorisation we use.
+    </tip>
+
+    <chapter title="Bug" id="bug">
+        <p>
+            Example of bugs:
+        </p>
+
+
+        <list>
+            <li>crash during application or rule execution</li>
+            <li>wrong changes are applied during "fixing codebase" process</li>
+            <li>issue with generated report</li>
+        </list>
+    </chapter>
+
+    <chapter title="Feature" id="feature">
+        <p>
+            Example of features:
+        </p>
+
+        <list>
+            <li>introduction of new rule</li>
+            <li>enhancement of existing rule to cover more cases (for example adding support for newly introduced PHP syntax)</li>
+            <li>introduction of new ruleset</li>
+            <li>update of existing ruleset (for example adjusting it to match newest style of given community or adding newly implemented rule that was supposed to be followed by style of given community, yet not implemented as a rule before)</li>
+        </list>
+    </chapter>
+</topic>

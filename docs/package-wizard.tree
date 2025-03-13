@@ -6,7 +6,9 @@
                   name="Package Wizard"
                   start-page="introduction.topic">
 
-    <toc-element topic="introduction.topic" />
+    <toc-element topic="introduction.topic" >
+        <toc-element topic="feature-or-bug.topic" />
+    </toc-element>
     <toc-element topic="installation.topic" />
     <toc-element topic="usage.topic" />
     <toc-element topic="development.topic" >

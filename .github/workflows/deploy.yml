@@ -16,13 +16,13 @@ permissions:
 env:
     COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
     ALGOLIA_APP_NAME: ${{ secrets.ALGOLIA_APPLICATION_ID }}
-    ALGOLIA_ARTIFACT: algolia-indexes-DOCS.zip
+    ALGOLIA_ARTIFACT: algolia-indexes-PACKAGE-WIZARD.zip
     ALGOLIA_INDEX_NAME: docs
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
-    ARTIFACT_DOCS: webHelpDOCS2-all.zip
+    ARTIFACT_DOCS: webHelpPACKAGE-WIZARD2-all.zip
     ARTIFACT_INDEXES: search-indexes
     ARTIFACT_INDEXES_CLEARED: search-indexes-cleared
-    CONFIG_JSON_PRODUCT: DOCS
+    CONFIG_JSON_PRODUCT: package-wizard
     CONFIG_JSON_VERSION: main
     INSTANCE: docs/package-wizard
     DOMAIN_NAME: package-wizard.com

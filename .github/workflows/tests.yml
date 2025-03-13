@@ -11,7 +11,7 @@ permissions: read-all
 env:
     COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
     INSTANCE: docs/package-wizard
-    ARTIFACT_DOCS: webHelpDOCS2-all.zip
+    ARTIFACT_DOCS: webHelpPACKAGE-WIZARD2-all.zip
     BUILDER_VERSION: 2025.03.8312
 
 jobs:

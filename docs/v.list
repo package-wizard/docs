@@ -6,4 +6,5 @@
     <var name="product-description" value="Package Wizard is a library for creating a new packages using CLI tool" />
     <var name="package-command" value="package" />
     <var name="year" value="2025" />
+    <var name="parameter-local" value="--local" />
 </vars>

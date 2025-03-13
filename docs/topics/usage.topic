@@ -14,18 +14,44 @@
 
     <chapter title="Basic Usage" id="basic_usage">
         <p>
-            To load and customize a project from the default list, simply invoke the console command:
+            To get started, simply run the console command:
         </p>
 
         <code-block lang="bash">
             %package-command%
-            
-            // or            
-            php %package-command%
         </code-block>
 
         <p>
             The program will then ask you a few questions and prepare the selected project for you.
         </p>
+    </chapter>
+
+    <chapter title="Custom Templates" id="custom_templates">
+        <p>
+            To work with a custom template, pass the repository name as the first parameter:
+        </p>
+
+        <code-block lang="bash">
+            %package-command% some/package
+        </code-block>
+
+        <p>
+            In this case,
+            <format style="bold">%product-name%</format>
+            will download the specified project and run the wizard for it.
+        </p>
+    </chapter>
+
+    <chapter title="Local Setup" id="local_setup">
+        <p>
+            If the template project is already on your device, and you want to start customizing it immediately, run the console command with the
+            <code>%parameter-local%</code> parameter and specify the folder path instead of the name. For example:
+        </p>
+
+        <code-block lang="bash">
+             %package-command% . %parameter-local%
+             %package-command% sub/directory %parameter-local%
+             %package-command% /var/www/some %parameter-local%
+        </code-block>
     </chapter>
 </topic>

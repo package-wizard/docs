@@ -108,9 +108,9 @@ jobs:
                     path: robots.txt
                     retention-days: 7
 
-    schema:
+    schemas:
         needs: build
-        name: Download schema
+        name: Download schemas
         runs-on: ubuntu-latest
 
         steps:
@@ -126,19 +126,23 @@ jobs:
             #        
             #        echo "latest=$VERSION" >> $GITHUB_OUTPUT
 
-            -   name: Download schema
+            -   name: Download schemas
                 run: |
                     # VERSION=${{ steps.versions.outputs.latest }}
                     
                     # update after release
                     #curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/tags/$VERSION/resources/schemas/schema-v2.json
+                    #curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/tags/$VERSION/resources/rules/example.json
                     curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/heads/main/resources/schemas/schema-v2.json
+                    curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/heads/main/resources/rules/example.json
 
             -   name: Upload artifacts
                 uses: actions/upload-artifact@v4
                 with:
-                    name: schema
-                    path: schema-v2.json
+                    name: schemas
+                    path: |
+                        schema-v2.json
+                        example.json
                     retention-days: 7
 
     deploy-pages:
@@ -149,7 +153,7 @@ jobs:
         needs:
             - test
             - robots
-            - schema
+            - schemas
 
         name: Deploy to pages
         runs-on: ubuntu-latest
@@ -165,10 +169,10 @@ jobs:
                 with:
                     name: robots
 
-            -   name: Download schema artifact
+            -   name: Download schemas artifact
                 uses: actions/download-artifact@v4
                 with:
-                    name: schema
+                    name: schemas
 
             -   name: Unzip artifact
                 run: unzip -O UTF-8 -qq '${{ env.ARTIFACT_DOCS }}' -d dir
@@ -181,6 +185,7 @@ jobs:
                 run: |
                     mkdir dir/schemas
                     mv schema-v2.json dir/schemas/schema-v2.json
+                    mv example.json dir/snippets/example.json
 
             -   name: Setup Pages
                 uses: actions/configure-pages@v5

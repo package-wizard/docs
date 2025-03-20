@@ -1,6 +1,6 @@
 # Package Wizard
 
-![preview](https://preview.dragon-code.pro/The%20Dragon%20Code/Documentation.svg?pretty-title=0&mode=light)
+![package wizard](https://preview.dragon-code.pro/the%20dragon%20code/package%20wizard.svg)
 
 ## Documentation
 

@@ -32,4 +32,23 @@
         <format style="bold"><a href="usage.topic" /></format>
         page.
     </p>
+
+    <p>
+        Now, just run the console command:
+    </p>
+
+    <tabs>
+        <tab title="Linux &amp; macOS">
+            <code-block lang="bash">
+                %package-command%
+            </code-block>
+        </tab>
+
+        <tab title="Windows">
+            <code-block lang="bash">
+                php %package-command%
+            </code-block>
+        </tab>
+    </tabs>
+
 </topic>

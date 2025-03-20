@@ -1,7 +1,191 @@
 {
     "$schema": "https://package-wizard.com/schemas/schema-v2.json",
     "wizard": {
-        "install": true,
-        "clean": true
-    }
+        "manager": {
+            "composer": true,
+            "npm": false,
+            "yarn": false
+        },
+        "clean": true,
+        "localization": "en"
+    },
+    "authors": [
+        {
+            "name": "John Doe",
+            "email": "john@example.com",
+            "replace": ":author:",
+            "format": ":name: <:email:>"
+        }
+    ],
+    "renames": [
+        {
+            "type": "rename",
+            "what": "path",
+            "source": "src/foo.stub",
+            "target": "src/bar.php"
+        },
+        {
+            "type": "rename",
+            "what": "path",
+            "source": "src/qwe/",
+            "target": "src/rty/"
+        },
+        {
+            "type": "rename",
+            "what": "name",
+            "source": "foo.stub",
+            "target": "bar.php"
+        },
+        {
+            "type": "rename",
+            "what": "name",
+            "source": "qwe",
+            "target": "rty"
+        }
+    ],
+    "copies": [
+        {
+            "source": "foo",
+            "target": "bar"
+        },
+        {
+            "source": "qwe/first.stub",
+            "target": "rty/second.txt"
+        }
+    ],
+    "removes": [
+        "foo",
+        "src/foo.stub"
+    ],
+    "replaces": [
+        {
+            "replace": ":some:",
+            "with": "new value"
+        },
+        {
+            "replace": [":foo:", "BaR"],
+            "with": "replaced"
+        }
+    ],
+    "variables": [
+        {
+            "type": "date"
+        },
+        {
+            "type": "date",
+            "replace": ":date:",
+            "format": "Y-m-d"
+        },
+        {
+            "type": "year",
+            "replace": ":year:"
+        },
+        {
+            "type": "yearRange",
+            "replace": ":yearRange:",
+            "start": 1970
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "dragon-code/laravel-deploy-operations"
+        },
+        {
+            "type": "composer",
+            "name": "dragon-code/laravel-data-dumper",
+            "dev": true
+        },
+        {
+            "type": "composer",
+            "name": "laravel/sail",
+            "dev": true,
+            "remove": true
+        },
+        {
+            "type": "npm",
+            "name": "vite",
+            "dev": true
+        },
+        {
+            "type": "yarn",
+            "name": "typescript",
+            "dev": true
+        }
+    ],
+    "questions": [
+        {
+            "id": "license",
+            "type": "license",
+            "default": "MIT License",
+            "replace": ":license:",
+            "file": {
+                "path": "LICENSE",
+                "replace": ":licensePath:"
+            }
+        },
+        {
+            "condition": {
+                "for": "license",
+                "operator": "!=",
+                "value": "MIT License"
+            },
+            "type": "author"
+        },
+        {
+            "condition": {
+                "for": "license",
+                "value": "MIT License"
+            },
+            "type": "author",
+            "author": {
+                "name": "Andrey Helldar",
+                "email": "helldar@dragon-code.pro"
+            },
+            "replace": ":author:",
+            "format": ":name: <:email:>"
+        },
+        {
+            "id": "some question",
+            "type": "ask",
+            "prompt": "select",
+            "question": "Which is the question here?",
+            "options": [
+                "foo",
+                "bar",
+                123
+            ],
+            "replace": ":for replace:"
+        },
+        {
+            "condition": {
+                "for": "some question",
+                "operator": "notIn",
+                "value": [234, "qwerty"]
+            },
+            "type": "ask",
+            "prompt": "text",
+            "question": "Which text?",
+            "replace": [":text1:", ":text2:"]
+        },
+        {
+            "id": "some number",
+            "type": "ask",
+            "prompt": "text",
+            "question": "Enter a number",
+            "replace": ":SO THAT NOTHING IS REPLACED IN FILES:"
+        },
+        {
+            "condition": {
+                "for": "some number",
+                "operator": "<=",
+                "value": 400
+            },
+            "type": "author",
+            "author": {
+                "name": "Some Author"
+            },
+            "replace": ":some author:",
+            "format": ":name:"
+        }
+    ]
 }

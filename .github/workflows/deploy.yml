@@ -132,14 +132,18 @@ jobs:
                     
                     # update after release
                     #curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/tags/$VERSION/resources/schemas/schema-v2.json
+                    #curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/tags/$VERSION/resources/schemas/example-v2.json
                     curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/heads/main/resources/schemas/schema-v2.json
+                    curl -O https://raw.githubusercontent.com/package-wizard/installer/refs/heads/main/resources/schemas/example-v2.json
 
             -   name: Upload artifacts
                 uses: actions/upload-artifact@v4
                 with:
                     name: schemas
-                    path: schema-v2.json
-                    retention-days: 7
+                    path: |
+                        schema-v2.json
+                        example-v2.json
+                    retention-days: 1
 
     deploy-pages:
         environment:
@@ -181,6 +185,7 @@ jobs:
                 run: |
                     mkdir dir/schemas
                     mv schema-v2.json dir/schemas/schema-v2.json
+                    mv example-v2.json dir/schemas/example-v2.json
 
             -   name: Setup Pages
                 uses: actions/configure-pages@v5

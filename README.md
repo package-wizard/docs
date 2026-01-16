@@ -1,6 +1,9 @@
 # Package Wizard
 
-![package wizard](https://preview.dragon-code.pro/the%20dragon%20code/package%20wizard.svg)
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Docs.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&theme=dark&packageManager=none&packageName=docs&description=package-wizard&images=code">
+    <img src="https://banners.beyondco.de/Docs.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&theme=light&packageManager=none&packageName=docs&description=package-wizard&images=code" alt="Docs">
+</picture>
 
 ## Documentation
 
